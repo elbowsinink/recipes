@@ -123,15 +123,8 @@ main .container{
     gap: 9px;
 }
 
-.preview .img :last-child {
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    color: #030F09;
-    opacity: 0.2;
+.preview img{
+    cursor: pointer;
 }
 
 .more_pictures {
@@ -150,8 +143,137 @@ main .container{
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
+    cursor: pointer;
 }
 
 .more_pictures img{
     opacity: 0.2;
 }
+
+.card-base{
+    width: 955px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.dish-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.dish-info p._1{
+    max-width: 40%;
+}
+
+.dish-info p{
+    font-family:'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #030F09;
+}
+
+
+button{
+    padding: 14.5px 28.5px;
+    border: none;
+    outline: none; 
+    cursor: pointer;
+    background: #30BE76;
+    border-radius: 8px;
+}
+
+.dish-info p._2{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.edit{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.button.edit {
+    background: #FFFFFF;
+    color: #30BE76;
+    gap:8px;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.32px;
+    color: #30BE76;
+    cursor: pointer;
+}
+
+.line{
+    border-bottom: 0.5px solid #E6E6E6;
+    padding-bottom: 20px;
+    width: 905px;
+    margin:auto;
+}
+
+.how-to-cook{
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-right: 0em;
+    margin-left: auto;
+    width: 955px;
+
+}
+.ingredients{
+    padding-top:20px;
+    padding-left: 25px;
+    display: inline-flex;
+}
+
+p.ingredients-text{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #030F09;
+    padding-top:20px;
+    padding-left: 25px;
+}
+.first-line{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+}
+.round{
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+
+
+}
+.first-line .round img{
+    display: block;
+    padding:unset
+}
+
+
+
+
