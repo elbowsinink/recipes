@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 80px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    min-width: 1100px;
+}
+
+nav{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.rectangle{
+    position: absolute;
+    border-radius: 0px 0px 10px 10px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    width: 144px;
+    height: 111px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+.rectangle img{
+    cursor: pointer;
+}
+
+.message{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid #A8A8A8;
+}
+
+i{
+    color:#A8A8A8;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+input{
+    border: none;
+    outline:none;
+    width: 538px;
+    padding-left: 17px;
+    padding-bottom: 7.89px;
+}
+
+.message .img-messages{
+    cursor: pointer;
+}
+
+.message .img-user{
+    cursor: pointer;
+} 
+
+body{
+    background: #E5E5E5;
+}
