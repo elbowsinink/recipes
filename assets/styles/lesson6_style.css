@@ -49,6 +49,11 @@ header .container {
     cursor: pointer;
 }
 
+.rectangle img:active{
+    filter: invert(68%) sepia(87%) saturate(334%) hue-rotate(93deg) brightness(77%) contrast(100%);
+}
+
+
 .message{
     padding-top: 22px;
     display: flex;
@@ -70,11 +75,16 @@ header .container {
     padding-bottom: 7.89px;
 }
 
+
 i{
     color:#A8A8A8;
     mix-blend-mode: normal;
     opacity: 0.4;
     cursor: pointer;
+}
+
+.input i:active{
+    filter: invert(68%) sepia(87%) saturate(334%) hue-rotate(93deg) brightness(77%) contrast(100%);
 }
 
 input{
@@ -88,12 +98,13 @@ input{
     font-family: 'Nunito', sans-serif;
 }
 
-.message .img-messages{
-    cursor: pointer;
+.message .img-messages:active{
+    filter: invert(60%) sepia(43%) saturate(642%) hue-rotate(97deg) brightness(94%) contrast(92%);
 }
 
-.message .img-user{
-    cursor: pointer;
+.message .img-user:active{
+    opacity: 0.2;
+    border-radius:50%;
 } 
 
 body{
@@ -127,8 +138,19 @@ main .container:last-child{
     gap: 9px;
 }
 
-.preview img{
-    cursor: pointer;
+.images a img:active{
+    box-shadow: 0px 0px 15px #3d3d3d;
+    opacity: 0.5;
+}
+
+.preview a img:active{
+    box-shadow: 0px 0px 15px #3d3d3d;
+    opacity: 0.5;
+}
+
+.preview .more_pictures:active{
+    box-shadow: 0px 0px 15px #3d3d3d;
+    opacity: 0.5;
 }
 
 .more_pictures {
@@ -184,7 +206,7 @@ main .container:last-child{
 }
 
 
-button{
+button._1{
     padding: 14.5px 28.5px;
     border: none;
     outline: none; 
@@ -192,6 +214,15 @@ button{
     background: #30BE76;
     border-radius: 8px;
 }
+
+button._1:active {
+    background: #FFFFFF;
+}
+
+button._1 p:active {
+    color: #30BE76;
+}
+
 
 .dish-info p._2{
     font-family: 'Nunito', sans-serif;
@@ -210,7 +241,6 @@ button{
 
 .button.edit {
     background: #FFFFFF;
-    color: #30BE76;
     gap:8px;
     padding:0;
     font-family: 'Nunito', sans-serif;
@@ -221,6 +251,19 @@ button{
     letter-spacing: 0.32px;
     color: #30BE76;
     cursor: pointer;
+    height: 30px;
+    padding-right: 5px;
+    border: none;
+    outline: none;
+}
+button.edit:active {
+    box-shadow: 0px 0px 10px #30BE76;
+    background:#30BE76;
+    color: #FFFFFF;
+}
+
+button.edit img:active{
+    filter: invert(100%) sepia(45%) saturate(642%) hue-rotate(201deg) brightness(116%) contrast(98%);
 }
 
 .line{
@@ -350,6 +393,10 @@ ul.how-to-cook-content{
     justify-content: center;
 }
 
+.video .circle:active{
+    opacity: 0.8;
+}
+
 .video .circle .triangle{   
     width: 15.75px;
     height: 9.9px;
@@ -357,6 +404,7 @@ ul.how-to-cook-content{
     border-left: 15.75px solid #001A49;
     margin-left: 15px;
 }
+
 
 .additional-information{
     margin-top: 20px;
