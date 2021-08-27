@@ -104,6 +104,10 @@ main .container{
     display: flex;
     justify-content: space-between;
 }
+
+main .container:last-child{
+    padding-bottom: 48px;
+}
 .images{
     background: #FFFFFF;
     border-radius: 8px;
@@ -221,24 +225,8 @@ button{
 
 .line{
     border-bottom: 0.5px solid #E6E6E6;
-    padding-bottom: 20px;
     width: 905px;
     margin:auto;
-}
-
-.how-to-cook{
-    margin-top: 20px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    margin-right: 0em;
-    margin-left: auto;
-    width: 955px;
-
-}
-.ingredients{
-    padding-top:20px;
-    padding-left: 25px;
-    display: inline-flex;
 }
 
 p.ingredients-text{
@@ -251,29 +239,183 @@ p.ingredients-text{
     padding-top:20px;
     padding-left: 25px;
 }
-.first-line{
+
+ul.ingridient{
+    padding-top:20px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    row-gap: 15px;
+    grid-template-rows: repeat(3, min-content);
+    grid-auto-flow: column;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+li.ingridient{
     display: flex;
     align-items: center;
-    justify-content: left;
     gap: 15px;
 }
-.round{
+
+li.ingridient span{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #030F09;
+}
+
+.how-to-cook{
+    margin-top: 20px;
     background: #FFFFFF;
-    border: 1px solid #000000;
-    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 0em;
+    margin-left: auto;
+    width: 955px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 25px;
+}
+
+.how-to-cook p{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #030F09;
+}
+
+ul.how-to-cook-content{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #030F09;
+    padding-top: 30px;
+}
+
+.content-video{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-video ul{
+    max-width: 47%;
+}
+
+.content-video ul li:before{
+    position: absolute;
+    content: counter(number);
+    left: 0;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
+    color: #30BE76;
+    border: 1px solid #30BE76;
     text-align: center;
+    line-height: 20px;
+    margin-right: 17px;
+  }
+
+  .content-video ul li{
+    margin-bottom: 22px;
+    counter-increment: number;
+    padding-left: 40px;
+    position: relative;
+  }
+
+  .video{
+    background: url(../images/video.svg) no-repeat center;
+    background-size: cover;
+    height: 262px;
+    width: 444px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+  }
 
-
+  .video .circle{
+    background: #FFFFFF;
+    height: 49.74050521850586px;
+    width: 49.51728439331055px;
+    left: 683.3617248535156px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.first-line .round img{
-    display: block;
-    padding:unset
+
+.video .circle .triangle{   
+    width: 15.75px;
+    height: 9.9px;
+    border: 9.9px solid transparent; 
+    border-left: 15.75px solid #001A49;
+    margin-left: 15px;
 }
 
+.additional-information{
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-right: 0em;
+    margin-left: auto;
+    width: 955px;
+    padding: 25px;
+}
 
+.additional-information p{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #030F09;
+}
+.additional-information .information{
+    font-size: 14px;
+    line-height: 22px;
+    color: #A8A8A8;
+    display: grid;
+    column-gap: 274px;
+    grid-template-rows: repeat(2, min-content);
+    grid-auto-flow: column;
+    padding-top: 30px;
+}
+.additional-information ul.information li{
+    display: flex;
+}
+.additional-information .information li ul li{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #030F09;
+}
 
+.name{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #A8A8A8;
+}
 
+.name._1{
+    padding-right: 30px;
+}
+
+.name._2{
+    padding-right: 44px;
+}
+
+.name._3{
+    padding-right: 98px;
+}
